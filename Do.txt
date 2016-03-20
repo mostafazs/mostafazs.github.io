@@ -1,0 +1,2 @@
+1- Correct Request Button
+2- Add paypall method for donating

@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mostafa Ziasistani Projects">
+    <meta name="description" content="Mostafa Ziasistani">
     <meta name="author" content="Mostafa Ziasistani">
-
+    <meta name="author" content="Mostafa Ziasistani">
+	
     <title>Home - Mostafa Ziasistani</title>
 	
     <!-- Bootstrap Core CSS -->
@@ -54,7 +55,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Projects</a>
+                        <a class="page-scroll" href="#about">Git Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#download">By Me Coffee</a>
@@ -74,9 +75,9 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Mostafa Ziasistani</h1>
-                        <p class="intro-text">Front-End Developer & Web Programmer</p>
+                    <div class="col-md-8 col-md-offset-2" itemscope itemtype="http://schema.org/Person">
+                        <h1 class="brand-heading"><span itemprop="givenName">Mostafa</span> <span itemprop="familyName">Ziasistani</span></h1>
+                        <p class="intro-text"><span itemprop="jobTitle">Front-End Developer & Web Programmer</span></p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -90,28 +91,37 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Projects For Contributing</h2>
+                <h2>Git Projects</h2>
 				<p>
-				
-				<ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://github.com/mostafazs/jalali-calendar/" class="btn btn-default btn-lg contribute" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Jalali Calendar</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mostafazs/bits2bytes/" class="btn btn-default btn-lg contribute" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Bits2Bytes</span></a>
-                    </li>
-					<li>
-                        <a href="https://github.com/mostafazs/Bits2Bytes-php" class="btn btn-default btn-lg contribute" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">B2B</span></a>
-                    </li>
-                </ul>
-				
-				<ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://github.com/mostafazs/wordpress-developers-shortcuts/" class="btn btn-default btn-lg contribute" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Wordpress Developers Shortcuts</span></a>
-                    </li>
-                </ul>
-				
+				Here is just some simple projects for showcase.
 				</p>
+				
+				<ul class="list-inline banner-social-buttons">
+					<div itemscope itemtype="https://schema.org/SoftwareApplication">
+					<h2><span itemprop="name">Jalali Calendar</span></h2>
+					<p>
+					<a href="https://addons.mozilla.org/addon/jalali-persian-calendar/?src=api" target="_blank">Jalali Calendar</a> is a <span itemprop="applicationSuite">Firefox</span> <span itemprop="applicationCategory">Add on</span>, that show shamsi date ( Jalali Calendar ) in simply way to users.
+					This addon show you a simple popup about today Shamsi date and a badge with today Shamsi date , it also show Persian translate of Gregorian today date.
+					<span style="visibility:hidden" itemprop="downloadUrl">https://addons.mozilla.org/addon/jalali-persian-calendar/?src=api</span>
+					</p>
+					</div>
+                    <li>
+                        <a href="https://github.com/mostafazs/jalali-calendar/" class="btn btn-default btn-lg contribute" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Contribute to Jalali Calendar</span></a>
+                    </li><br/><br/>
+                    <div itemscope itemtype="https://schema.org/SoftwareApplication">
+					<h2><span itemprop="name">Bits2Bytes</span></h2>
+					<p>
+					<a href="https://addons.mozilla.org/addon/bits2bytes/?src=api" target="_blank">Bits2Bytes</a> is a <span itemprop="applicationSuite">Firefox</span>  <span itemprop="applicationCategory">Add on</span> , that convert <a href="https://wikipedian.org/Computer_Data_Units" target="_blank">computer data units</a>.
+					With Bits2Bytes you can convert computer data units from bits to bytes and vice versa.
+					This extension is perfect for computer science student, and anyone that need to convert computer units to each other.
+					For converting , this addon use a <a href="https://github.com/mostafazs/tmp_bit2bytes">PHP script</a> and it need active internet connection.You can contribute on php script for make this addon better.
+					<span style="visibility:hidden" itemprop="downloadUrl">https://addons.mozilla.org/addon/bits2bytes/?src=api</span>
+					</p>
+                    <li>
+                        <a href="https://github.com/mostafazs/bits2bytes/" class="btn btn-default btn-lg contribute" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Contribute to Bits2Bytes</span></a>
+                    </li>
+                    </div>
+                </ul>
             </div>
         </div>
     </section>
@@ -120,10 +130,12 @@
     <section id="download" class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-2" itemscop itemtype="https://schema.org/DonateAction">
                     <h2>Buy Cup Of Coffee</h2>
-                    <p class="download-section-p">If you love open source projects, You are one of my client and i satidfy you on your project , you can make small donation.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" id="download-section-btn" class="btn btn-default btn-lg"><span class="fa fa-dollar">&nbsp;</span>Make Donation</a>
+                    <span style="visibility:hidden" itemprop="recipient">Open Source Community</span>
+                    <p class="download-section-p">You can support me by small donation or just let me do somethings for you :)</p>                    
+                    <a href="#" id="download-section-btn" class="btn btn-default btn-lg" itemprop="url"><span class="fa fa-dollar">&nbsp;</span>Make Donation</a>
+					<a href="#" id="download-section-btn" class="btn btn-default btn-lg" itemprop="url"><span class="fa fa-code">&nbsp;</span>Do My Project</a>
                 </div>
             </div>
         </div>
@@ -135,8 +147,6 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Me</h2>
                 <p>Feel free to contact me to provide some feedback on my open source projects, give us suggestions for new project, or to just say hello!</p>
-                <p><a href="mailto:mostafazs@github.com">mostafazs@github.com</a>
-                </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/#" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -145,7 +155,7 @@
                         <a href="https://github.com/mostafazs" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
 					<li>
-                        <a href="https://linkedin.com/ziasistani" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                        <a href="https://ir.linkedin.com/in/mostafazs" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
                     </li>
                 </ul>
             </div>
@@ -153,12 +163,12 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+    <!--<div id="map"></div>-->
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; <script>g_year();</script></p>
+            <p style="font-size:12px">Copyright &copy; <script>g_year();</script></p>
         </div>
     </footer>
 
@@ -172,7 +182,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
